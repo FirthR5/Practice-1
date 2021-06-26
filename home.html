@@ -4,82 +4,115 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Universidad AT Prueba</title>
-        <style>
-            .container{display: flex;   flex-wrap: wrap;}
-            .container>div{background-color: springgreen; font-size: 20px;
-                margin: 20px; padding: 20px; width: 200px;
-            }
-            .laImagen{
-                background-color: gray;
-                height: 200px;
-            }
-            .row{width:90%;}
-            .row>div{padding: 20px; background-color: teal; border: 2px solid black;}
-        </style>
+        <link rel="stylesheet" href="Styles\Styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-       
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        
     </head>
     <body>
-        <header>
-            <div>
-                <img src="Images\01 - Copy.png">
-                Universidad AT Prueba
-                <button><a href="">home</a></button>
-                <button><a href="">Servicios</a></button>
-                <button><a href="">Correos</a></button>                 
-                <button><a href="">Campus</a></button>
-            </div>
-            <p>SISTEMA INTEGRAL DE INFORMACION ACADEMICA Y ADMINISTRATIVA</p>
-        </header>
-        <section>
-            <div class="laImagen">
-                Imagen
-            </div>
-            <div class="row">
-                <div class="col-1 col-sm-12">Proceso de resultado de proceso de primavera 2021</div>
-                <div class="col-1 col-sm-4">Nuevo Ingreso</div>
-                <div class="col-1 col-sm-4">Administrativo</div>
-                <div class="col-1 col-sm-4">Portal de padres</div>
-                <div class="col-1 col-sm-4">Contratos</div>
-                <div class="col-1 col-sm-4">Portal de escolares</div>
-                <div class="col-1 col-sm-4">Administrativo</div>
-                <div class="col-1 col-sm-12">Curso Remedial de ingles</div>
-            </div>
+        <div class="contenedor">
+            
+            <header>
+                <nav>
+                    
+                    <a><img src="Images\01 - Copy.png"></a>
+                    <div class="nav-links" >
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">Servicios</a></li>
+                            <li><a href="">Correos</a></li>
+                            <li><a href="">Campus</a></li>
+                        </ul>
+                    </div>
+               
+                </nav>
+                <div id="SIIAYA">
+                    <h1>SIIA</h1>
+                    <p >SISTEMA INTEGRAL DE INFORMACION ACADEMICA Y ADMINISTRATIVA</p>
 
-            <div id="Pasos">
-                <a href="http://www.academico.uat.edu.mx/doc/folleto_alumno.pdf">Clic para conocer los pasos para INSCRIBIRTE</a>
-                <p>
-                    <strong>Dudas,sugerencias,comentarios: </strong>
-                    Dirección de Información Academica Administrativa, 
-                    Diaa@uat.edu.mx
-                </p>
-            </div>
-            <div class="container">
-                <div>
-                    <th>Zona NORTE
-                        <ul>Ladero</ul>
-                        <ul>Matamoros</ul>
-                        <ul>Reynosa</ul>
-                        <ul>Rio Bravo</ul>
-                        <ul>Valle Hermoso</ul>
-                    </th>
                 </div>
-                <div>Zona Centro
-                    <ul>Ciudad Victoria</ul>
-                    <ul>Mante</ul>
+            </header>
+
+            <section>
+                <div class="laImagen">
+                    <img src="Images\Aviso.jpg">
                 </div>
-                <div>Zona Sur
-                    <ul>Tampico</ul>
-                    <ul>Madero </ul>
+                
+                <div class="row">
+                    <div class="T1">
+                        <h2>RESULTADOS DEL</h2>
+                        <h1>PROCESO DE ADMINISION<br>
+                            PRIMAVERA 2021</h1>
+                    </div>
+                    <div class="Table_Data">
+                        <tr >
+                            <div class="T2"><img src="Images\NI.png"></div>
+                            <div class="T2"><img src="Images\Admin.png"></div>
+                            <div class="T2"><img src="Images\PortalPadres.png"></div>
+                        </tr>
+                        <tr class="T2">
+                            <div class="T2"><img src="Images\Contratos.png"> </div>
+                            <div class="T2"><img src="Images\Escolares.png"> </div>
+                            <div class="T2"><img src="Images\remedial.png"></div>
+                        </tr>
+                    </div>
+                        
                 </div>
-            </div>
-        </section>
-        <footer>
-            <p>Universidad Autónoma de Tamaulipas. Derechos reservados ©2008 - 2020.</p>
-            <p>Dirección: Matamoros S/N, Juan B. Tijerina y C. Colon C.P. 87000</p>
-            <p>Cd. Victoria Tamaulipas México Tel. +52  834 318 1800</p>
-            <p>Sitio desarrollado en la <a href="http://www.academico.uat.edu.mx/#">DIAA</a> | <a href="http://www.academico.uat.edu.mx/aviso_privacidad.html">Políticas de uso y privacidad</a></p>
-        
-        </footer>
+                
+                <div id="Pasos">
+                    <a class="hero-btn" href="http://www.academico.uat.edu.mx/doc/folleto_alumno.pdf">
+                        Clic para conocer los pasos para INSCRIBIRTE
+                    </a>
+                    <p>
+                        <strong>Dudas,sugerencias,comentarios: </strong>
+                        <br>
+                        Dirección de Información Academica Administrativa, 
+                        Diaa@uat.edu.mx
+                    </p>
+                </div>
+                <div class="Zonas">
+                    <p id="elModulo">Modulo Academico</p>
+                    <div class="Norte-Centro">
+                        <th>Zona NORTE
+                            <ul>Ladero</ul>
+                            <ul>Matamoros</ul>
+                            <ul>Reynosa</ul>
+                            <ul>Rio Bravo</ul>
+                            <ul>Valle Hermoso</ul>
+                        </th>
+                    </div>
+                    <div class="Norte-Centro">Zona Centro
+                        <ul>Ciudad Victoria</ul>
+                        <ul>Mante</ul>
+                    </div>
+                    <div class="Sur">Zona Sur
+                        <ul>Tampico</ul>
+                        <ul>Madero </ul>
+                        <ul>P</ul>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>Universidad Autónoma de Tamaulipas. Derechos reservados ©2008 - 2020.</p>
+                <p>Dirección: Matamoros S/N, Juan B. Tijerina y C. Colon C.P. 87000</p>
+                <p>Cd. Victoria Tamaulipas México Tel. +52  834 318 1800</p>
+                <p>Sitio desarrollado en la <a href="http://www.academico.uat.edu.mx/#">DIAA</a> | <a href="http://www.academico.uat.edu.mx/aviso_privacidad.html">Políticas de uso y privacidad</a></p>
+                
+            </footer>
+        </div>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right ="0";
+            }function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+        </script>
     </body>
 </html>
