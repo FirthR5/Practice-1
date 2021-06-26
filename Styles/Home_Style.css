@@ -1,0 +1,241 @@
+
+body{
+    width: 100%;
+    background-size:cover;
+    position: relative;
+}
+
+header, footer{
+    background-color: #EB6129;
+    font-family: Arial;
+}
+
+/*Nav*/
+nav{
+    display: flex;   flex-wrap: wrap;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-links ul li::after{
+   content: '';
+    width: 0%; 
+    height: 2px;
+    background-color: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+#SIIAYA{
+    width: 100%;
+    position: relative;
+    background-position: center;
+    color: #fff;
+    background-color: gray;
+    text-align: center;
+}
+/*background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7),url());
+*/
+
+
+
+/*Section*/
+.contenedor{ 
+    background-color: white;
+    /*max-width: 1000px;*/
+    overflow: hidden;
+}
+.laImagen img{
+    background-color: gray;
+    width: 100%;
+    height: auto;
+}
+.T2>img{
+    height: auto;
+    width: 100%;
+}
+
+
+.Table_Data{
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content:center;
+}
+.Table_Data>div{
+    background-color: #0169A4;
+    margin: 20px;
+    padding: 20px; 
+    width: 25%;
+}
+
+#Pasos, #elModulo{
+    display: flex;   
+    flex-wrap: wrap;
+    position: relative;
+}
+.T1{
+    justify-content:center;
+    text-align: center;
+    color:black;
+    background-color: rgb(224, 214, 214);
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 12px 4px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.T1:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transform: 1.5s;
+}
+/*
+ width: 100%;
+    position: relative;
+    background-position: center;
+    color: #fff;
+    background-color: gray;
+    text-align: center;
+*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 4px;
+    background-color: transparent;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transform: 1.5s;
+    
+}
+
+#Pasos{
+    background-color: #EB6129;
+    position: relative;
+    justify-content:center;
+    
+}
+#elModulo{
+    background-color: #0169A4;
+}
+
+.Zonas{
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content:center;
+
+}
+.Zonas>p{
+    width: 100%;
+}
+
+.Zonas>div{
+    align-items: center;
+    background-color: #0169A4; font-size: 20px;
+    margin-left: 5px; margin-bottom: 30px; padding: 40px; 
+    box-sizing: border-box;
+}
+
+
+
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1001px){
+    .Table_Data>div{
+        width: 25%
+    }
+    .Zonas>div{
+        width: 30%;
+    }
+   
+    
+}
+@media (max-width: 1000px){
+    .Table_Data>div{
+        width: 40%;
+    }
+   
+    .Sur{
+        width: 80%;
+        
+    }
+    
+    
+}
+nav .fa{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .Table_Data>div{
+        width: 100%;
+    }
+    .Zonas>div{
+        width: 100%;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: #EB6129;
+        height: 100%;
+        width: 200px;
+        top: 0;
+        right: 0px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: #fff; margin: 10px; font-size: 22px; cursor: pointer;
+    }
+    nav ul{
+        padding: 40px;
+    }
+    
+}
