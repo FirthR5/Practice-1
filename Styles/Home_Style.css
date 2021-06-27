@@ -83,15 +83,30 @@ header, footer{
     width: 100%;
     height: auto;
 }
-.T2>img{
+.T2 img{
     height: auto;
     width: 100%;
+}
+.T2{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    
+    background: transparent;
+    height: 100%; width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
 }
 
 
 .Table_Data{
     flex-wrap: wrap;
-    position: relative;
     display: flex;
     justify-content:center;
 }
@@ -102,11 +117,7 @@ header, footer{
     width: 25%;
 }
 
-#elModulo{
-    display: flex;   
-    flex-wrap: wrap;
-    position: relative;
-}
+
 .T1{
     justify-content:center;
     text-align: center;
@@ -119,6 +130,7 @@ header, footer{
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    transition: 0.5s;
 }
 .T1:hover{
     border: 1px solid #f44336;
@@ -138,7 +150,8 @@ header, footer{
     background-color: #EB6129;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 2% 20%;
+    font-size: 20px;
 }
 
 
@@ -159,38 +172,46 @@ header, footer{
     background-color: #f44336;
     transform: 1.5s;
 }
+
+
+
 .Zonas{
-    justify-content:center;
-    flex-wrap: wrap;
     display: flex;
-    color: white;
+    margin-top: 5%;
+    justify-content: space-between;
+    font-size: 20px; 
+    width: 80%;
+    margin: auto;
+}
+.zone-col{
+    
+    flex-basis: 31%;
+    background-color: #d1e6f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+    height: 400px;
+    color: black;
+}
+.zone-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
-.Norte-Centro, .Sur{
-    align-items: center;
-    background-color: #0169A4; font-size: 20px; 
-    margin-bottom: 30px; 
-    box-sizing: border-box;
-    margin-left: 5px; 
-    padding:10px;
-}
-.Norte-Centro{
-    width: 30%;
-    padding: 1%;
-}
-.Sur{
-    width: 100%;
-}
 
 #elModulo{
     background-color: #0169A4;
-    justify-content:center;
+    text-align: center;
     width: 100%;
+    padding: 3% 0px;
 }
-    
 
 footer{
     text-align: center;
+    color: white;
+    
+    padding: 3% 0px;
 }
 
 
@@ -211,9 +232,7 @@ nav .fa {
     .Table_Data>div{
         width: 25%
     }
-    .Zonas>div{
-        width: 30%;
-    }
+    
     
     
 }
@@ -227,25 +246,16 @@ nav .fa {
         width: 40%;
     }
    
-    .Sur{
-        width: 60%;
-    }
-    .Zonas>Norte-Centro{
-        
-        width: 40%;
-    }
-    
+   
     
 }
 
 @media (max-width: 600px){
-    
+   
     .Table_Data>div{
         width: 100%;
     }
-    .Zonas>div{
-        width: 100%;
-    }
+    
     .nav-links ul li{
         display: block;
     }
@@ -272,5 +282,17 @@ nav .fa {
     nav ul{
         padding: 30px;
     }
-    
+    .Zonas{
+        flex-direction: column;
+    }
+    .T1 h2{
+        font-size: 26px;
+    }.T1 h1{
+        font-size: 28px;
+    }
+    footer{
+        
+    padding: 2% 20%;
+    font-size: 20px;
+    }
 }
