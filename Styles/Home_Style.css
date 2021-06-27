@@ -74,8 +74,7 @@ header, footer{
 /*Section*/
 .laImagen{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto;
     width: 75%;
 }
 .laImagen img{
@@ -205,6 +204,9 @@ header, footer{
     text-align: center;
     width: 100%;
     padding: 3% 0px;
+    font-size: 50px;
+    font-family: FuenteLigth sans-serif
+    
 }
 
 footer{
@@ -285,11 +287,20 @@ nav .fa {
     .Zonas{
         flex-direction: column;
     }
+
+    #elModulo{
+        padding: 6% 0px;
+    }
+    
+
+
+
     .T1 h2{
         font-size: 26px;
     }.T1 h1{
         font-size: 28px;
     }
+    
     footer{
         
     padding: 2% 20%;
