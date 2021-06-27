@@ -23,15 +23,19 @@
                 <nav class="Nav-Contenedor">
                     
                     <a><img src="Images\01 - Copy.png"></a>
-                    <div class="nav-links" >
+                    <div class="nav-links" id="navLinks">
+                        
+                        <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                        
                         <ul>
-                            <li><a href="">home</a></li>
+                            <li><a href="">Home</a></li>
                             <li><a href="">Servicios</a></li>
                             <li><a href="">Correos</a></li>
                             <li><a href="">Campus</a></li>
                         </ul>
                     </div>
-               
+                    <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+
                 </nav>
                 <div id="SIIAYA">
                     <h1>SIIA</h1>
@@ -67,18 +71,18 @@
                 </div>
                 
                 <div id="Pasos">
-                    <a class="hero-btn" href="http://www.academico.uat.edu.mx/doc/folleto_alumno.pdf">
-                        Clic para conocer los pasos para INSCRIBIRTE
-                    </a>
                     <p>
                         <strong>Dudas,sugerencias,comentarios: </strong>
                         <br>
                         Dirección de Información Academica Administrativa, 
                         Diaa@uat.edu.mx
                     </p>
+                    <a class="hero-btn" href="http://www.academico.uat.edu.mx/doc/folleto_alumno.pdf">
+                        Clic para conocer los pasos para INSCRIBIRTE
+                    </a>
                 </div>
                 <div class="Zonas">
-                    <p id="elModulo">Modulo Academico</p>
+                    <h2 id="elModulo">Modulo Academico</h2>
                     <div class="Norte-Centro">
                         <th>Zona NORTE
                             <ul>Ladero</ul>

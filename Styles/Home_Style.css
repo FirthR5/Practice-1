@@ -1,4 +1,6 @@
-
+*{
+    padding: 0; margin: 0;
+}
 body{
     width: 100%;
     background-size:cover;
@@ -13,12 +15,17 @@ header, footer{
 /*Nav*/
 .Nav-Contenedor{
     display: flex;   flex-wrap: wrap;
-    
 }
 
-.nav-links{
+.nav-links, .fa-bars{
     flex: 1;
     text-align: right;
+
+}
+.fa-window-close{
+    align-content: flex-end;
+    align-items: flex-end;
+    display: block;
 }
 
 
@@ -60,11 +67,16 @@ header, footer{
 
 
 
-/*Section*/
 .contenedor{ 
-    background-color: white;
     /*max-width: 1000px;*/
     overflow: hidden;
+}
+/*Section*/
+.laImagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 .laImagen img{
     background-color: gray;
@@ -107,7 +119,6 @@ header, footer{
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-
 }
 .T1:hover{
     border: 1px solid #f44336;
@@ -126,6 +137,8 @@ header, footer{
 #Pasos{
     background-color: #EB6129;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -150,9 +163,7 @@ header, footer{
     justify-content:center;
     flex-wrap: wrap;
     display: flex;
-}
-.Zonas>p{
-    width: 100%;
+    color: white;
 }
 
 .Norte-Centro, .Sur{
@@ -174,11 +185,9 @@ header, footer{
 #elModulo{
     background-color: #0169A4;
     justify-content:center;
+    width: 100%;
 }
     
-
-
-
 
 footer{
     text-align: center;
@@ -193,7 +202,7 @@ footer{
 
 
 
-nav .fa{
+nav .fa {
     display: none;
 }
 
@@ -205,10 +214,15 @@ nav .fa{
     .Zonas>div{
         width: 30%;
     }
-   
+    
     
 }
 @media (max-width: 1000px){
+    .laImagen{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
     .Table_Data>div{
         width: 40%;
     }
@@ -225,6 +239,7 @@ nav .fa{
 }
 
 @media (max-width: 600px){
+    
     .Table_Data>div{
         width: 100%;
     }
@@ -235,21 +250,27 @@ nav .fa{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background-color: #EB6129;
-        height: 100%;
+        height: 100vh;
         width: 200px;
         top: 0;
-        right: 0px;
+        right: -200px;
         text-align: left;
         z-index: 2;
+        transition: 1s;
     }
+  
     nav .fa{
         display: block;
-        color: #fff; margin: 10px; font-size: 22px; cursor: pointer;
+        color: #fff; 
+        margin: 10px; 
+        font-size: 22px; 
+        cursor: pointer;
+        
     }
     nav ul{
-        padding: 40px;
+        padding: 30px;
     }
     
 }
