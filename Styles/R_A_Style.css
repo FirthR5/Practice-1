@@ -24,8 +24,9 @@ section{
 
 .Cajas_Reg_Ing{
     display: flex;
+    position: relative;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     height: 30vh;
 }
 
@@ -51,7 +52,10 @@ section{
     margin-top: 10px;
     background-color: #017bab;
     border: none;
+    border-radius: 10px;
+    padding:10px;
 }
+
 .UserImg{
     display: block;
     margin-left: auto;
@@ -81,5 +85,26 @@ footer p{
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+    }
+    .CajaRegistro{
+        margin-bottom: 100px;
+    }
+    .CajaRegistro h2{
+        background-color: #017bab;
+    }
+    .Cajas_Reg{
+        margin-bottom: 10px
+    }
+}
+
+@media (min-width:901px) {
+    .Cajas_Reg_Ing {
+        position: relative;
+        right: 5%
+    }
+    .Cajas_Ing{
+    
+        position: relative;
+        left: 10%;
     }
 }
