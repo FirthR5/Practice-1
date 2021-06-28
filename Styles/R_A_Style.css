@@ -1,0 +1,85 @@
+*{
+    margin: 0; padding: 0;
+}
+      
+header{ height: 10vh;}
+
+
+
+
+section h2{
+    color: aliceblue;
+    font-size: 62px;
+}
+
+
+section{
+    display: block;
+    height: 70vh;
+    
+}
+.CajaRegistro{
+    text-align: center;
+}
+
+.Cajas_Reg_Ing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+.Cajas_Reg, .Cajas_Ing{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    
+    justify-content: center;
+    align-items: center;
+    display:grid;
+    border-top: 4px solid #017bab; 
+    border-radius: 10px;
+}
+.Cajas_Reg_Ing input{
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    background-color: #252323;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Cajas_Reg_Ing button{
+    
+    margin-top: 10px;
+    background-color: #017bab;
+    border: none;
+}
+.UserImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+footer{
+    background-color: rgba(190, 181, 181, 0.329);
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 3% 0px;
+    height: 10%;
+    bottom: 2;
+}
+
+
+@media (max-width: 900px){
+    .Cajas_Reg_Ing{
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}

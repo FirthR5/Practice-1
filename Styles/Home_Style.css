@@ -16,6 +16,15 @@ header, footer{
 .Nav-Contenedor{
     display: flex;   flex-wrap: wrap;
 }
+.contenedor{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), 
+    rgba(4,9,30,0.7), url(Images\Fondo_PortalAspirantes.png));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
 .nav-links, .fa-bars{
     flex: 1;
@@ -91,8 +100,7 @@ header, footer{
     position: relative;
     overflow: hidden;
 }
-.layer{
-    
+.layer, .T2 a{
     background: transparent;
     height: 100%; width: 100%;
     position: absolute;
@@ -101,9 +109,8 @@ header, footer{
 }
 .layer:hover{
     background: rgba(226,0,0,0.7);
+    
 }
-
-
 .Table_Data{
     flex-wrap: wrap;
     display: flex;
@@ -144,6 +151,7 @@ header, footer{
     background-color: gray;
     text-align: center;
 */
+
 
 #Pasos{
     background-color: #EB6129;
@@ -302,8 +310,7 @@ nav .fa {
     }
     
     footer{
-        
-    padding: 2% 20%;
-    font-size: 20px;
+        padding: 2% 20%;
+        font-size: 20px;
     }
 }
